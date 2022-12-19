@@ -5,7 +5,7 @@
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
-<pre><span style="font-size:18px"><strong>Input:
+<pre style="position: relative;"><span style="font-size:18px"><strong>Input:
 </strong>N = 7
 a[] = {2,6,1,9,4,5,3}
 <strong>Output:
@@ -14,11 +14,11 @@ Explanation:
 </strong>The consecutive numbers here
 are 1, 2, 3, 4, 5, 6. These 6 
 numbers form the longest consecutive
-subsquence.</span></pre>
+subsquence.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
 
-<pre><span style="font-size:18px"><strong>Input:
+<pre style="position: relative;"><span style="font-size:18px"><strong>Input:
 </strong>N = 7
 a[] = {1,9,3,10,4,20,2}
 <strong>Output:
@@ -26,7 +26,7 @@ a[] = {1,9,3,10,4,20,2}
 Explanation:
 </strong>1, 2, 3, 4 is the longest
 consecutive subsequence.</span>
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><br>
 <span style="font-size:18px"><strong>Your Task:</strong><br>
