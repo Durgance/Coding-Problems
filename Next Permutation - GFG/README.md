@@ -4,20 +4,20 @@
 
 <p><strong><span style="font-size:18px">Example 1:</span></strong></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong> N = 6
+<pre><span style="font-size:18px"><strong>Input:</strong> N = 6
 arr = {1, 2, 3, 6, 5, 4}
 <strong>Output:</strong> {1, 2, 4, 3, 5, 6}
 <strong>Explaination:</strong> The next permutation of the 
-given array is {1, 2, 4, 3, 5, 6}.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+given array is {1, 2, 4, 3, 5, 6}.</span></pre>
 
 <p><strong><span style="font-size:18px">Example 2:</span></strong></p>
 
-<pre style="position: relative;"><span style="font-size:18px"><strong>Input:</strong> N = 3
+<pre><span style="font-size:18px"><strong>Input:</strong> N = 3
 arr = {3, 2, 1}
 <strong>Output:</strong> {1, 2, 3}
 <strong>Explaination:</strong> As arr[] is the last 
 permutation. So, the next permutation 
-is the lowest one.</span><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+is the lowest one.</span></pre>
 
 <p><span style="font-size:18px"><strong>Your Task:</strong><br>
 You do not need to read input or print anything. Your task is to complete the function <strong>nextPermutation()</strong> which takes N and arr[ ] as input parameters and returns a list of numbers containing the next permutation.</span></p>
