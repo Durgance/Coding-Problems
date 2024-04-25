@@ -1,6 +1,6 @@
 class Solution:
     def binarySearch(self,arr,target):
-        print(arr)
+        # print(arr)
         low = 0
         high = len(arr)-1
         while low <= high:
