@@ -16,11 +16,11 @@ class Solution:
                     if check_sum - target == 0  :
                         # l.append(sum([nums[i],nums[j],nums[k]]))
                         # j+=1
-                        print(f"{nums[i]} {nums[j]} {nums[k]}")
+                        # print(f"{nums[i]} {nums[j]} {nums[k]}")
                         return check_sum
                         # so that no two same numbers can give problem
-                        while nums[j] == nums[j-1] and j<k:
-                            j+=1
+                        # while nums[j] == nums[j-1] and j<k:
+                        #     j+=1
                     elif check_sum - target < 0:
                         l.append(check_sum)
                         j += 1
@@ -37,7 +37,7 @@ class Solution:
                         continue
                     if j==k:
                         break
-        print(l)
+        # print(l)
         return l[min(range(len(l)), key=lambda i: abs(l[i]- target))]
         # if len(l)==1:
         #     return l[0]
