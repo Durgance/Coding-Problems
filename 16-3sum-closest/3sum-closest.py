@@ -3,7 +3,7 @@ class Solution:
         arr.sort()
         score = float('inf')
         # print(arr)
-        for i in range(len(arr)):
+        for i in range(len(arr)-2):
             target = arr[i]
             left = i+1
             right = len(arr)-1
