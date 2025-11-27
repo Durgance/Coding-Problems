@@ -13,7 +13,8 @@ class Solution:
                     right = len(arr)-1
                     while left<right:
                         total = arr[left]+arr[right] +arr[i] + arr[j]
-                        if total == target and i!=j and left!=right and i!=left and i!=right and j!=left and j!=right:
+                        if total == target :
+                            #  and i!=j and left!=right and i!=left and i!=right and j!=left and j!=right:
                             # quadruplets.add(tuple(sorted([arr[i],arr[j],arr[left],arr[right]])))
                             quadruplets.append([arr[i],arr[j],arr[left],arr[right]])
                             left += 1
