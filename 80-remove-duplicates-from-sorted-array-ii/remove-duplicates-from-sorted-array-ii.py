@@ -4,19 +4,19 @@ class Solution:
             return len(nums)
         # if len(set(nums)) == len(nums):
         #     return len(nums)
-        left = 2
-        right = 2
+        p = 2
+        loc = 2
         # for i in range(2,len(nums)):
-        while left<len(nums):
+        while p<len(nums):
             # print(left,right)
             # if nums[left]>nums[right]:
             #     break
-            if nums[left] != nums[right - 2] :
-                nums[right] = nums[left]
-                right+=1
+            if nums[p] != nums[loc - 2] :
+                nums[loc] = nums[p]
+                loc+=1
                 # left = 0
-            left+=1
-            if left>=len(nums):
+            p+=1
+            if p>=len(nums):
                 break
         # print(nums)
-        return right
+        return loc
