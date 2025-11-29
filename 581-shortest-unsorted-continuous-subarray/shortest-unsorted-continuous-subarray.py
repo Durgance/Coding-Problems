@@ -2,7 +2,7 @@ class Solution:
         
 
     def findUnsortedSubarray(self, nums: List[int]) -> int:
-            print(nums)
+            # print(nums)
             # TODO: Write your code here
             l = 0
             r = 1
@@ -28,7 +28,7 @@ class Solution:
                 elif nums[l]>nums[r]:
                     end=r
                     break
-            print(f"({start},{nums[start]}) : ({end},{nums[end]}) ")
+            # print(f"({start},{nums[start]}) : ({end},{nums[end]}) ")
 
             # now i know the start and end of the subarray if possible this result 
             # need to extend the array if needed in both direction
@@ -40,7 +40,7 @@ class Solution:
                 min_subarray = min(min_subarray,nums[value])
                 max_subarray = max(max_subarray,nums[value])
             
-            print(f"(MAX : {max_subarray}) , (MIN : {min_subarray}) ")
+            # print(f"(MAX : {max_subarray}) , (MIN : {min_subarray}) ")
             
             while start>0:
                 if nums[max(start-1,0)]>min_subarray :
@@ -53,7 +53,7 @@ class Solution:
                 else :
                     break
             
-            print(f"({start},{nums[start]}) : ({end},{nums[min(end,len(nums)-1)]}) ")
+            # print(f"({start},{nums[start]}) : ({end},{nums[min(end,len(nums)-1)]}) ")
             # print(f"(MAX : {max_subarray}) , (MIN : {min_subarray}) ")
             # print("------------------------------")
             # print("------------------------------")
