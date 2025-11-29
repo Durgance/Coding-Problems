@@ -1,6 +1,7 @@
 class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
         rem = sum(nums) % k
+        return rem
         if rem == 0 :
             return 0
         else :
