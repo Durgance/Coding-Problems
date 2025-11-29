@@ -33,12 +33,13 @@ class Solution:
             # now i know the start and end of the subarray if possible this result 
             # need to extend the array if needed in both direction
             # now i need to min of the sub array  and maximum value in the sub array
-            min_subarray = math.inf
-            max_subarray = -math.inf
-
-            for value in range(start,end+1):
-                min_subarray = min(min_subarray,nums[value])
-                max_subarray = max(max_subarray,nums[value])
+            # min_subarray = math.inf
+            # max_subarray = -math.inf
+            min_subarray = min(nums[start:end+1])
+            max_subarray = max(nums[start:end+1])
+            # for value in range(start,end+1):
+            #     min_subarray = min(min_subarray,nums[value])
+            #     max_subarray = max(max_subarray,nums[value])
             
             # print(f"(MAX : {max_subarray}) , (MIN : {min_subarray}) ")
             
