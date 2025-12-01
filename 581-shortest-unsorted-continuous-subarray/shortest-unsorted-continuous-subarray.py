@@ -3,7 +3,7 @@ class Solution:
 
     def findUnsortedSubarray(self, nums: List[int]) -> int:
             # print(nums)
-            # TODO: Write your code here
+            
             l = 0
             r = 1
             start = 0
@@ -33,10 +33,12 @@ class Solution:
             # now i know the start and end of the subarray if possible this result 
             # need to extend the array if needed in both direction
             # now i need to min of the sub array  and maximum value in the sub array
+
             # min_subarray = math.inf
             # max_subarray = -math.inf
             min_subarray = min(nums[start:end+1])
             max_subarray = max(nums[start:end+1])
+            
             # for value in range(start,end+1):
             #     min_subarray = min(min_subarray,nums[value])
             #     max_subarray = max(max_subarray,nums[value])
@@ -48,6 +50,7 @@ class Solution:
                     start=max(start-1,0)
                 else:
                     break
+                    
             while end<len(nums) :
                 if nums[min(end+1,len(nums)-1)]<max_subarray :
                     end = min(end+1,len(nums))
