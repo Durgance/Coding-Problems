@@ -28,7 +28,7 @@ class Solution:
                     slow = slow.next
                     fast = fast.next
                 return slow
-                
+        return None
                 # found cycle
         #         flag = True
         #         curr = slow 
