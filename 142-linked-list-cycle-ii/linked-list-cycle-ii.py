@@ -17,11 +17,18 @@ class Solution:
             slow = slow.next
 
             if slow == fast:
+                """ 
+                    non need to found the cycle length and move the pointer that length , just directly
+                    start from the strat as the fast is already at the poistion of the posinter_2 which 
+                    moves n length . directly move slow and fast and wait for them to meet, fast will have to move 
+                    the same length as slow to reach the start index
+                """
                 slow = head
                 while slow != fast:
                     slow = slow.next
                     fast = fast.next
                 return slow
+                
                 # found cycle
         #         flag = True
         #         curr = slow 
