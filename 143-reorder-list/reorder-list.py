@@ -39,7 +39,11 @@ class Solution:
             # print("--------------")
             t1 = curr.next
             t2 = rev_head.next
-
+            """
+                switching the node pointing the 1st node to the 1nd node of the 2nd list and 
+                pointing the 1st node of the second list back to the 2nd node of the 1st list,
+                which will now become the 3rd node
+            """
             curr.next = rev_head
             rev_head.next = t1
 
