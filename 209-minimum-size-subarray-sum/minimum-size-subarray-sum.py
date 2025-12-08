@@ -1,9 +1,10 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         start ,end , win_sum = 0, 0, 0
+        n = len(nums)
         min_len = float('inf')
         # flag = False
-        for end in range(len(nums)):
+        for end in range(n):
             win_sum += nums[end]
             while win_sum>=target:
                 # flag = True
