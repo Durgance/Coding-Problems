@@ -22,7 +22,7 @@ class Solution:
             # print(f"Start : {start} , End : {end}, Len : {end - start +1} , max_ones : {max_ones_len}")
             # print(start)
             # print(end-start +1)
-            while (end - start +1 - max_ones_count) > k:
+            if  (end - start +1 - max_ones_count) > k:
                 if nums[start] == 1:
                     max_ones_count -=1
                 start+=1
