@@ -6,9 +6,9 @@ class Solution:
         char_freq = dict()
         for end in range(n):
             right_char = s[end]
-            if right_char not in char_freq:
-                char_freq[right_char] = 0
-            char_freq[right_char] += 1
+            # if right_char not in char_freq:
+            #     char_freq[right_char] = 0
+            char_freq[right_char] = 1 + char_freq.get(right_char,0)
 
             while char_freq[right_char]>1:
                 left_char = s[start]
