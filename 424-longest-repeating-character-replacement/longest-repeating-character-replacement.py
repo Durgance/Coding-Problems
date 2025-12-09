@@ -14,7 +14,7 @@ class Solution:
             # here we can change a max of k char . so we are taking 
             # len of window - length of the repeated char which should be less then 
             # number of char to replace then we move the window by 1
-            while (end - start +1 - max_char_len)>k:
+            if (end - start +1 - max_char_len)>k:
                 left_char = s[start]
                 char_freq[left_char]-=1
                 start+=1
