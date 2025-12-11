@@ -1,5 +1,7 @@
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
+        if len(p)>len(s):
+            return []
         start = 0
         ans = []
         matched = 0
